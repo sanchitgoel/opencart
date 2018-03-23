@@ -29,5 +29,15 @@
             <add><![CDATA[= VQMod::modCheck($realpath, DIR_TEMPLATE . $name);]]></add>
         </operation>
     </file>
+    <file name="admin/view/template/common/header.twig">
+        <operation>
+            <search position="replace"><![CDATA[
+			<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />
+			]]></search>
+            <add><![CDATA[
+			<link type="text/css" href="view/stylesheet/styles.css" rel="stylesheet" media="screen" />
+			]]></add>
+        </operation>
+    </file>
 
 </modification>
