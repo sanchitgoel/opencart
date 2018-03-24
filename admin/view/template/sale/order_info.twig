@@ -125,7 +125,7 @@
         <h3 class="panel-title"><i class="fa fa-info-circle"></i> {{ text_order }}</h3>
       </div>
       <div class="panel-body">
-        <table class="table table-bordered">
+        <table class="table ">
           <thead>
             <tr>
               <td style="width: 50%;" class="text-left">{{ text_payment_address }}</td>
@@ -141,7 +141,7 @@
               {% endif %} </tr>
           </tbody>
         </table>
-        <table class="table table-bordered">
+        <table class="table ">
           <thead>
             <tr>
               <td class="text-left">{{ column_product }}</td>
@@ -185,7 +185,7 @@
           
         </table>
         {% if comment %}
-        <table class="table table-bordered">
+        <table class="table ">
           <thead>
             <tr>
               <td>{{ text_comment }}</td>
@@ -274,7 +274,7 @@
           </div>
           <div class="tab-pane" id="tab-additional"> {% if account_custom_fields %}
             <div class="table-responsive">
-              <table class="table table-bordered">
+              <table class="table ">
                 <thead>
                   <tr>
                     <td colspan="2">{{ text_account_custom_field }}</td>
@@ -295,7 +295,7 @@
             {% endif %}
             {% if payment_custom_fields %}
             <div class="table-responsive">
-              <table class="table table-bordered">
+              <table class="table ">
                 <thead>
                   <tr>
                     <td colspan="2">{{ text_payment_custom_field }}</td>
@@ -316,7 +316,7 @@
             {% endif %}
             {% if shipping_method and shipping_custom_fields %}
             <div class="table-responsive">
-              <table class="table table-bordered">
+              <table class="table ">
                 <thead>
                   <tr>
                     <td colspan="2">{{ text_shipping_custom_field }}</td>
@@ -336,7 +336,7 @@
             </div>
             {% endif %}
             <div class="table-responsive">
-              <table class="table table-bordered">
+              <table class="table ">
                 <thead>
                   <tr>
                     <td colspan="2">{{ text_browser }}</td>

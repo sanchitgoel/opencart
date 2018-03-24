@@ -1,4 +1,4 @@
-<table class="table table-bordered">
+<table class="table ">
   <tr>
 	<td>{{ column_order_id }}</td>
 	<td>
@@ -40,7 +40,7 @@
   <tr>
 	<td>{{ column_customer_details }}</td>
 	<td>
-	  <table class="table table-bordered">
+	  <table class="table ">
 		<thead>
 		  <tr>
 			<td>{{ column_billing_address }}</td>
@@ -67,7 +67,7 @@
   <tr>
 	<td>{{ column_order_lines }}</td>
 	<td>
-	  <table class="table table-bordered">
+	  <table class="table ">
 		<thead>
 		  <tr>
 			<td class="text-left">{{ column_item_reference }}</td>
@@ -128,7 +128,7 @@
   <tr>
 	<td>{{ column_capture }}</td>
 	<td>
-		<table class="table table-bordered">
+		<table class="table ">
 		  <thead>
 			<tr>
 			  <td class="text-left">{{ column_capture_id }}</td>
@@ -173,7 +173,7 @@
   <tr>
 	<td>{{ column_refund }}</td>
 	<td>
-		<table class="table table-bordered">
+		<table class="table ">
 		  <thead>
 			<tr>
 			  <td class="text-left">{{ column_date }}</td>
@@ -428,7 +428,7 @@
         <h4 class="modal-title" id="capture-shipping-info-{{ capture.capture_id }}-title">{{ capture.shipping_info_title }}</h4>
       </div>
       <div class="modal-body">
-		<table class="table table-bordered shipping-info-data">
+		<table class="table  shipping-info-data">
 		  <tbody>
 			<tr>
 			  {% for key, shipping_info in capture.shipping_info %}

@@ -430,6 +430,9 @@ div.required .control-label:not(span):before, td.required:before {
     font-weight: 600;
     color: #4a4a4a;
 }
+.panel .table-responsive{
+    margin: -15px -15px 0 -15px;
+}
 .table thead a{
     color: #4a4a4a;
     font-weight: bold;
@@ -602,7 +605,7 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     margin-right: 10px;
     font-weight: 300;
 }
-.panel-body{padding: 0;}
+
 
 .img-thumbnail i {
     color: #FFFFFF;

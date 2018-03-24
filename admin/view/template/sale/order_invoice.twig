@@ -15,7 +15,7 @@
   {% for order in orders %}
   <div style="page-break-after: always;">
     <h1>{{ text_invoice }} #{{ order.order_id }}</h1>
-    <table class="table table-bordered">
+    <table class="table ">
       <thead>
         <tr>
           <td colspan="2">{{ text_order_detail }}</td>
@@ -45,7 +45,7 @@
         </tr>
       </tbody>
     </table>
-    <table class="table table-bordered">
+    <table class="table ">
       <thead>
         <tr>
           <td style="width: 50%;"><b>{{ text_payment_address }}</b></td>
@@ -63,7 +63,7 @@
         </tr>
       </tbody>
     </table>
-    <table class="table table-bordered">
+    <table class="table ">
       <thead>
         <tr>
           <td><b>{{ column_product }}</b></td>
@@ -105,7 +105,7 @@
       </tbody>
     </table>
     {% if order.comment %}
-    <table class="table table-bordered">
+    <table class="table ">
       <thead>
         <tr>
           <td><b>{{ text_comment }}</b></td>
