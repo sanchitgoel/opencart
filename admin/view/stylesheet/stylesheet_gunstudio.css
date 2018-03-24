@@ -413,6 +413,22 @@ div.required .control-label:not(span):before, td.required:before {
 .btn-group {
     white-space: nowrap;
 }
+.table thead tr{
+    background-color: #ececec;
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 12px;
+}
+.panel .table{
+    font-size: 12px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+.table thead a{
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 .table thead td span[data-toggle="tooltip"]:after, label.control-label span:after {
     font-family: FontAwesome;
@@ -581,22 +597,6 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     font-weight: 300;
 }
 .panel-body{padding: 0;}
-.panel-body thead tr{
-    background-color: #ececec;
-    color: #4a4a4a;
-    font-weight: bold;
-    font-size: 12px;
-}
-.panel-body table{
-    font-size: 12px;
-    font-weight: 600;
-    color: #4a4a4a;
-}
-.panel-body thead a{
-    color: #4a4a4a;
-    font-weight: bold;
-    font-size: 12px;
-}
 
 .img-thumbnail i {
     color: #FFFFFF;
