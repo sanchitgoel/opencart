@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']    = 'Total Customers';
+$_['heading_title']    = 'Customers';
 
 // Text
 $_['text_extension']   = 'Extensions';

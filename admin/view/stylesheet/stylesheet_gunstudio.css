@@ -626,13 +626,15 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 /* Tiles */
 .tile {
     margin-bottom: 15px;
-    border-radius: 3px;
+    border-radius: 7px;
     color: #FFFFFF;
     transition: all 1s;
+    height:210px;
+    padding: 25px;
 }
 
 .tile-primary {
-    background-color: #1b80c2;
+    background-color: #652d90;
 }
 
 .tile-success {
@@ -672,32 +674,26 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     opacity: 1;
 }
 
-.tile-body {
-    padding: 15px;
-    color: #FFFFFF;
-    line-height: 48px;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+
+.tile i {
+    font-size: 67px;
+    margin: 25px 0 20px 0;
+    color: #fff;
 }
 
-.tile .tile-body i {
-    font-size: 50px;
-    opacity: 0.3;
-    transition: all 1s;
+.tile .title-heading {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 18px;
+    background-color: #874fae;
+    display: inline-block;
+    padding: 6px 20px;
+    text-transform: uppercase;
 }
 
-.tile:hover .tile-body i {
-    color: #FFFFFF;
-    opacity: 1;
-}
-
-.tile .tile-body h2 {
-    font-size: 42px;
-}
-
-.tile-footer {
-    padding: 5px 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
 
 #stats {
     border-radius: 2px;
