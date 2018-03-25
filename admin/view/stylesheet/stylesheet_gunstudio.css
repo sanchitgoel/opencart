@@ -300,9 +300,8 @@ a:hover, a:focus {
 }
 
 #menu > li > a {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 2.8px;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #fff;
     padding-left: 26px;
     border-bottom: 0px solid #3a3055;
@@ -333,10 +332,9 @@ a:hover, a:focus {
 /* 2nd lvl */
 #menu li li a {
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 2.8px;
-    font-weight: 600;
+    letter-spacing: 2px;
 
 }
 
