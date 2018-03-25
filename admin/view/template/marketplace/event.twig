@@ -2,9 +2,6 @@
 <div id="content">
   <div class="page-header">
     <div class="container-fluid">
-      <div class="pull-right">
-        <button type="button" data-toggle="tooltip" title="{{ button_delete }}" class="btn btn-danger" onclick="confirm('{{ text_confirm }}') ? $('#form-event').submit() : false;"><i class="fa fa-trash-o"></i></button>
-      </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -24,9 +21,13 @@
     </div>
     {% endif %}
     <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_event }}</div>
-    <div class="panel panel-default">
+    <div class="panel panel-default tableOnly">
       <div class="panel-heading">
         <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
+        <div class="pull-right">
+          <a type="button" data-toggle="tooltip" title="{{ button_delete }}" onclick="confirm('{{ text_confirm }}') ? $('#form-event').submit() : false;"><i class="fa fa-trash-o"></i></a>
+        </div>
+
       </div>
       <div class="panel-body">
         <form action="{{ delete }}" method="post" enctype="multipart/form-data" id="form-event">
@@ -38,7 +39,7 @@
                   <td class="text-left">{% if sort == 'code' %}<a href="{{ sort_code }}" class="{{ order|lower }}">{{ column_code }}</a>{% else %}<a href="{{ sort_code }}">{{ column_code }}</a>{% endif %}</td>
                   <td class="text-left">{% if sort == 'status' %}<a href="{{ sort_status }}" class="{{ order|lower }}">{{ column_status }}</a>{% else %}<a href="{{ sort_status }}">{{ column_status }}</a>{% endif %}</td>
                   <td class="text-right">{% if sort == 'sort_order' %}<a href="{{ sort_sort_order }}" class="{{ order|lower }}">{{ column_sort_order }}</a>{% else %}<a href="{{ sort_sort_order }}">{{ column_sort_order }}</a>{% endif %}</td>
-                  <td class="text-right">{{ column_action }}</td>
+                  <td class="text-center">{{ column_action }}</td>
                 </tr>
               </thead>
               <tbody>
@@ -54,8 +55,10 @@
                 <td class="text-left">{{ event.code }}</td>
                 <td class="text-left">{{ event.status }}</td>
                 <td class="text-right">{{ event.sort_order }}</td>
-                <td class="text-right"><button type="button" data-toggle="modal" data-target="#modal-event{{ event.event_id }}" class="btn btn-info"><i class="fa fa-info-circle"></i></button>
-                  {% if not event.enabled %}<a href="{{ event.enable }}" data-toggle="tooltip" title="{{ button_enable }}" class="btn btn-success"><i class="fa fa-plus-circle"></i></a>{% else %}<a href="{{ event.disable }}" data-toggle="tooltip" title="{{ button_disable }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></a>{% endif %}
+                <td class="text-center">
+                  <a type="button" data-toggle="modal" data-target="#modal-event{{ event.event_id }}" ><i class="fa fa-info-circle font_18"></i></a>
+                  {% if not event.enabled %}
+                  <a href="{{ event.enable }}" data-toggle="tooltip" title="{{ button_enable }}" ><i class="fa fa-plus-circle font_18"></i></a>{% else %}<a href="{{ event.disable }}" data-toggle="tooltip" title="{{ button_disable }}" ><i class="fa fa-minus-circle font_18"></i></a>{% endif %}
                   <div id="modal-event{{ event.event_id }}" class="modal text-left">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -71,7 +74,8 @@
                         </div>
                       </div>
                     </div>
-                  </div></td>
+                  </div>
+                </td>
               </tr>
               {% endfor %}
               {% else %}
