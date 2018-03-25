@@ -428,9 +428,7 @@ div.required .control-label:not(span):before, td.required:before {
     font-weight: 600;
     color: #4a4a4a;
 }
-.panel .table-responsive{
-    margin: -15px -15px 0 -15px;
-}
+
 .table thead a{
     color: #4a4a4a;
     font-weight: bold;
@@ -1023,6 +1021,17 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     content: "\e91c";
 }
 
+
+/** Overriding contents **/
+.tableOnly .panel-body{padding: 0;}
+.tableOnly .panel-body form + .row{margin: 0;}
+
+.note-toolbar,.note-toolbar i {
+    color: #4a4a4a !important;
+}
+
+
+/* Utilities */
 .color-primary{
     color: #70339b;
 }
