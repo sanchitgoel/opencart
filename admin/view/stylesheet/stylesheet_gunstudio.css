@@ -1044,10 +1044,6 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 .font_18{
     font-size: 18px;
 }
-
-.td_first_checkbox{
-    padding: 8px 3px 8px 11px !important;
-}
 .tableOnly .panel-body form td:first-child{
     padding-left: 12px;
 }
