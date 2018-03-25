@@ -12,7 +12,7 @@
           <td>{{ column_status }}</td>
           <td>{{ column_date_added }}</td>
           <td class="text-right">{{ column_total }}</td>
-          <td class="text-right">{{ column_action }}</td>
+          <td class="text-center">{{ column_action }}</td>
         </tr>
       </thead>
       <tbody>
@@ -24,7 +24,7 @@
           <td>{{ order.status }}</td>
           <td>{{ order.date_added }}</td>
           <td class="text-right">{{ order.total }}</td>
-          <td class="text-right"><a href="{{ order.view }}" data-toggle="tooltip" title="{{ button_view }}" class="btn btn-info"><i class="fa fa-eye"></i></a></td>
+          <td class="text-center"><a href="{{ order.view }}" data-toggle="tooltip" title="{{ button_view }}" ><i class="fa fa-eye font_18"></i></a></td>
         </tr>
         {% endfor %}
         {% else %}
