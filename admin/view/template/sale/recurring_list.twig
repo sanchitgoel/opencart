@@ -2,9 +2,6 @@
 <div id="content">
   <div class="page-header">
     <div class="container-fluid">
-      <div class="pull-right">
-        <button type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-recurring').toggleClass('hidden-sm hidden-xs');" class="btn btn-default hidden-md hidden-lg"><i class="fa fa-filter"></i></button>
-      </div>
       <h1>{{ heading_title }}</h1>
       <ul class="breadcrumb">
         {% for breadcrumb in breadcrumbs %}
@@ -25,9 +22,10 @@
     {% endif %}
     <div class="row">
       <div id="filter-recurring" class="col-md-3 col-md-push-9 col-sm-12 hidden-sm hidden-xs">
-        <div class="panel panel-default">
+        <div class="panel panel-default ">
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-filter"></i> {{ text_filter }}</h3>
+
           </div>
           <div class="panel-body">
             <div class="form-group">
@@ -97,9 +95,12 @@
         </div>
       </div>
       <div class="col-md-9 col-md-pull-3 col-sm-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default tableOnly">
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
+            <div class="pull-right">
+                <a type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-recurring').toggleClass('hidden-sm hidden-xs');" class="hidden-md hidden-lg"><i class="fa fa-filter"></i></a>
+              </div>
           </div>
           <div class="panel-body">
             <form action="" method="post" enctype="multipart/form-data" id="form-recurring">
@@ -113,7 +114,7 @@
                       <td class="text-left">{% if sort == 'customer' %} <a href="{{ sort_customer }}" class="{{ order|lower }}">{{ column_customer }}</a> {% else %} <a href="{{ sort_customer }}">{{ column_customer }}</a> {% endif %}</td>
                       <td class="text-left">{% if sort == 'or.status' %} <a href="{{ sort_status }}" class="{{ order|lower }}">{{ column_status }}</a> {% else %} <a href="{{ sort_status }}">{{ column_status }}</a> {% endif %}</td>
                       <td class="text-left">{% if sort == 'or.date_added' %} <a href="{{ sort_date_added }}" class="{{ order|lower }}">{{ column_date_added }}</a> {% else %} <a href="{{ sort_date_added }}">{{ column_date_added }}</a> {% endif %}</td>
-                      <td class="text-right">{{ column_action }}</td>
+                      <td class="text-center">{{ column_action }}</td>
                     </tr>
                   </thead>
                   <tbody>
@@ -127,7 +128,7 @@
                     <td class="text-left">{{ recurring.customer }}</td>
                     <td class="text-left">{{ recurring.status }}</td>
                     <td class="text-left">{{ recurring.date_added }}</td>
-                    <td class="text-right"><a href="{{ recurring.view }}" data-toggle="tooltip" title="{{ button_order_recurring }}" class="btn btn-info"><i class="fa fa-eye"></i></a> <a href="{{ recurring.order }}" data-toggle="tooltip" title="{{ button_order }}" class="btn btn-info"><i class="fa fa-shopping-cart"></i></a></td>
+                    <td class="text-center"><a href="{{ recurring.view }}" data-toggle="tooltip" title="{{ button_order_recurring }}" ><i class="fa fa-eye font_18"></i></a> <a href="{{ recurring.order }}" data-toggle="tooltip" title="{{ button_order }}" ><i class="fa fa-shopping-cart font_18"></i></a></td>
                   </tr>
                   {% endfor %}
                   {% else %}
