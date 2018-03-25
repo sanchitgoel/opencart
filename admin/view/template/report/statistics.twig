@@ -20,7 +20,7 @@
       <button type="button" class="close" data-dismiss="alert">&times;</button>
     </div>
     {% endif %}
-    <div class="panel panel-default">
+    <div class="panel panel-default tableOnly">
       <div class="panel-heading">
         <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
       </div>
@@ -31,7 +31,7 @@
               <tr>
                 <td class="text-left">{{ column_name }}</td>
                 <td class="text-right">{{ column_value }}</td>
-                <td class="text-right">{{ column_action }}</td>
+                <td class="text-center">{{ column_action }}</td>
               </tr>
             </thead>
             <tbody>
@@ -40,7 +40,7 @@
               <tr>
                 <td class="text-left">{{ statistic.name }}</td>
                 <td class="text-right">{{ statistic.value }}</td>
-                <td class="text-right"><a href="{{ statistic.href }}" data-toggle="tooltip" title="{{ button_refresh }}" class="btn btn-warning"><i class="fa fa-refresh"></i></a></td>
+                <td class="text-center"><a href="{{ statistic.href }}" data-toggle="tooltip" title="{{ button_refresh }}"><i class="fa fa-refresh font_18"></i></a></td>
               </tr>
               {% endfor %}
               {% else %}
