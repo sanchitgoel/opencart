@@ -48,7 +48,7 @@
                 <td class="text-right">{{ column_points }}</td>
                 <td class="text-right">{{ column_orders }}</td>
                 <td class="text-right">{{ column_total }}</td>
-                <td class="text-right">{{ column_action }}</td>
+                <td class="text-center">{{ column_action }}</td>
               </tr>
             </thead>
             <tbody>
@@ -63,7 +63,7 @@
               <td class="text-right">{{ customer.points }}</td>
               <td class="text-right">{{ customer.orders }}</td>
               <td class="text-right">{{ customer.total }}</td>
-              <td class="text-right"><a href="{{ customer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+              <td class="text-center"><a href="{{ customer.edit }}" data-toggle="tooltip" title="{{ button_edit }}" ><i class="fa fa-pencil color-green font_18"></i></a></td>
             </tr>
             {% endfor %}
             {% else %}
