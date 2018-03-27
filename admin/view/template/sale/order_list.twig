@@ -95,8 +95,8 @@
           <h3 class="panel-title"><i class="fa fa-list"></i> {{ text_list }}</h3>
           <div class="pull-right">
             <a type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-order').toggleClass('hidden-sm hidden-xs');" class=" hidden-md hidden-lg"><i class="fa fa-filter"></i></a>
-            <a type="submit" id="button-shipping" form="form-order" formaction="{{ shipping }}" formtarget="_blank" data-toggle="tooltip" title="{{ button_shipping_print }}" ><i class="fa fa-truck"></i></a>
-            <a type="submit" id="button-invoice" form="form-order" formaction="{{ invoice }}" formtarget="_blank" data-toggle="tooltip" title="{{ button_invoice_print }}"><i class="fa fa-print"></i></a>
+            <button class="btn-invisible" type="submit" id="button-shipping" form="form-order" formaction="{{ shipping }}" formtarget="_blank" data-toggle="tooltip" title="{{ button_shipping_print }}" ><i class="fa fa-truck"></i></button>
+            <button class="btn-invisible" type="submit" id="button-invoice" form="form-order" formaction="{{ invoice }}" formtarget="_blank" data-toggle="tooltip" title="{{ button_invoice_print }}"><i class="fa fa-print"></i></button>
             <a href="{{ add }}" data-toggle="tooltip" title="{{ button_add }}" ><i class="fa fa-plus"></i></a>
          </div>
         </div>

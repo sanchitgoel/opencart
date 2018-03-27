@@ -1046,3 +1046,8 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 .tableOnly .panel-body form td:first-child{
     padding-left: 12px;
 }
+
+.btn-invisible{
+    border: none;
+    background-color: transparent;
+}

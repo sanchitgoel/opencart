@@ -134,7 +134,7 @@
             <div class="pull-right">
                     <a type="button" data-toggle="tooltip" title="{{ button_filter }}" onclick="$('#filter-product').toggleClass('hidden-sm hidden-xs');" class="hidden-md hidden-lg"><i class="fa fa-filter"></i></a>
                     <a href="{{ add }}" data-toggle="tooltip" title="{{ button_add }}" ><i class="fa fa-plus"></i></a>
-                    <a type="submit" form="form-product" formaction="{{ copy }}" data-toggle="tooltip" title="{{ button_copy }}" ><i class="fa fa-copy"></i></a>
+                    <button class="btn-invisible" type="submit" form="form-product" formaction="{{ copy }}" data-toggle="tooltip" title="{{ button_copy }}" ><i class="fa fa-copy"></i></button>
                     <a type="button" form="form-product" formaction="{{ delete }}" data-toggle="tooltip" title="{{ button_delete }}"  onclick="confirm('{{ text_confirm }}') ? $('#form-product').submit() : false;"><i class="fa fa-trash-o"></i></a>
                   </div>
           </div>
