@@ -1,0 +1,28 @@
+<div class="tile tile-primary text-center">
+    <p><i class="fa fa-cog"></i></p>
+    <p> <a id="button-setting" onclick="javascript:openDeveloperOptions()" class="title-heading">{{ heading_title }}</a></p>
+</div>
+<script type="text/javascript"><!--
+   function openDeveloperOptions() {
+        $.ajax({
+            url: 'index.php?route=common/developer&user_token={{ user_token }}',
+            dataType: 'html',
+            beforeSend: function() {
+                $('#button-setting').button('loading');
+            },
+            complete: function() {
+                $('#button-setting').button('reset');
+            },
+            success: function(html) {
+                $('#modal-developer').remove();
+
+                $('body').prepend('<div id="modal-developer" class="modal">' + html + '</div>');
+
+                $('#modal-developer').modal('show');
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            }
+        });
+    };
+    //--></script>
