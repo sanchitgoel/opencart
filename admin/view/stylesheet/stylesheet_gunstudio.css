@@ -1048,6 +1048,8 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 }
 
 /* Utilities */
+.noPadding{padding: 0;}
+.noMar{margin:0;}
 .color-primary {
     color: #70339b;
 }
@@ -1076,4 +1078,86 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 .btn-invisible:hover, .btn-invisible:active, .btn-invisible:focus {
     outline: none;
     border: none;
+}
+
+.table-package{
+
+}
+.table-package tr td{
+
+    border-bottom: 20px solid #f4f4f4;
+}
+.table-package thead tr{
+    color: #652d90;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: #f4f4f4;
+}
+.table-package thead tr td{text-align: center}
+.table-package tbody tr td{
+    width:20%;
+    background-color: #fff;
+    border-bottom: 20px solid #f4f4f4;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #47beaf;
+    text-align: center;
+}
+.table-package tbody tr td:first-child{border-radius: 18px 0 0 18px; text-align: left;padding-left: 23px; }
+.table-package tbody tr td:last-child{border-radius: 0 18px 18px 0; border-right: none;}
+.table-package tbody tr td{    border: none; border-right: 1px solid #979797;border-bottom: 20px solid #f4f4f4;}
+.table-package tbody input[type="checkbox"]:checked{opacity: 1;}
+
+.table-package tbody input[type="checkbox"]:after{
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 7px;
+    width: 11px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+}
+.table-package tbody input[type="checkbox"]{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.2;
+    background-color: #47beaf;
+    border-color:#47beaf;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-green{
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #ffffff;
+    border-radius: 18px;
+    background-color: #47beaf;
+    padding: 7px 35px;
+    border-color: transparent;
+}
+
+.package h2{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #652d90;
+    border-bottom: 1px solid #47beaf;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+}
+.package label{
+    font-size: 18px;
+    font-weight: normal;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 37px 0 12px;
 }
