@@ -1207,7 +1207,7 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     height: 40px;
 }
 .panel-login .panel-title {
-    margin: 30px 0 10px 0;
+    margin: 30px 0 10px 0;girt
     font-size: 18px;
     letter-spacing: 5px;
 
