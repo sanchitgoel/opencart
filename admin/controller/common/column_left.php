@@ -49,6 +49,13 @@ class ControllerCommonColumnLeft extends Controller {
 					'href'     => $this->url->link('catalog/recurring', 'user_token=' . $this->session->data['user_token'], true),
 					'children' => array()		
 				);
+
+				$catalog[] = array(
+					'name'	   => "Packages",
+					'href'     => $this->url->link('catalog/packages', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);
+
 			}
 			
 			if ($this->user->hasPermission('access', 'catalog/filter')) {
