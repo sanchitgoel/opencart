@@ -425,6 +425,10 @@ div.required .control-label:not(span):before, td.required:before {
     white-space: nowrap;
 }
 
+.table-hover > tbody > tr:hover {
+    background-color: rgba(71, 190, 175, 0.15);
+}
+
 .table thead tr {
     background-color: #ececec;
     color: #4a4a4a;
@@ -748,6 +752,11 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     overflow: auto;
 }
 
+.alert-info {
+    background-color: rgba(71, 190, 175, 0.14);
+    border: none;
+}
+
 /* Fix form-group margin inside the modal */
 .modal-body .form-group {
     margin: 0;
@@ -1043,8 +1052,19 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     margin: 0;
 }
 
+.note-btn-group.btn-group .btn {
+    height: 35px;
+    border-color: #f4f4f4;
+}
+
+.btn:hover {
+    background-color: rgba(71, 190, 175, 0.14);
+    color: #4a4a4a;
+    border-color: rgba(71, 190, 175, 0.14);
+}
+
 .note-toolbar, .note-toolbar i {
-    color: #4a4a4a !important;
+    color: #fff !important;
 }
 
 /* Utilities */
@@ -1164,6 +1184,12 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     cursor: pointer;
 }
 
+.btn-info, .btn-success, .btn-primary, .btn-default {
+    border-color: #47beaf;
+    background-color: #47beaf;
+    color: #fff;
+}
+
 .btn-green {
     font-size: 16px;
     letter-spacing: 2px;
@@ -1194,21 +1220,24 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
     margin: 0 37px 0 12px;
 }
 
-.login-page{
+.login-page {
     background-image: linear-gradient(to bottom, #a592ff, #6400b6) !important;
 }
+
 .panel-login {
     background-color: transparent;
     text-align: center;
     color: #fff;
     margin-top: 150px;
 }
-.panel-login img{
+
+.panel-login img {
     height: 40px;
 }
+
 .panel-login .panel-title {
-    margin: 30px 0 10px 0;girt
-    font-size: 18px;
+    margin: 30px 0 10px 0;
+    girt font-size: 18px;
     letter-spacing: 5px;
 
 }
